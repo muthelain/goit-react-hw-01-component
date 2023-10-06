@@ -41,7 +41,7 @@ padding: 10px;
 
 text-align: center;
 
-:nth-child(2n){
+:nth-of-type(2n){
     background-color: #d4d4d4;
 };
 `;

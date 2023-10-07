@@ -12,6 +12,7 @@ import {
   UserStatsQuantity,
 } from './Profile.styled';
 
+
 export function Profile({ username, tag, location, avatar, stats }) {
   return (
     <ProfileCard>

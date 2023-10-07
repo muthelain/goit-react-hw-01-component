@@ -13,6 +13,7 @@ export const ListOfFriendItem = styled.li`
   background-color: white;
 `;
 
+
 export const IsOnlineStatus = styled.span`
   width: 12px;
   height: 12px;

@@ -5,6 +5,7 @@ width: 450px;
 margin: auto;
 `;
 
+
 export const Title = styled.h2`
   font-size: 40px;
   padding: 30px;

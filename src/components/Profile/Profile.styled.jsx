@@ -11,6 +11,7 @@ text-align: center;
 padding: 42px;
 `;
 
+
 export const Avatar = styled.img`
 display: block;
 margin: 0px auto 10px;

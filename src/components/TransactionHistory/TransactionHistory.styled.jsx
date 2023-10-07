@@ -31,7 +31,6 @@ export const HeadLi = styled.th`
 
 `;
 
-
 export const BodyT = styled.tbody`
 border-spacing: 0;
 `;

@@ -12,6 +12,7 @@ export function FriendList({ friends }) {
     );
   }
 
+  
 FriendList.propTypes = {
     friends: PropTypes.arrayOf(
       PropTypes.exact({

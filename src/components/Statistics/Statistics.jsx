@@ -8,6 +8,7 @@ import {
   StatisticLabel,
   StatisticPercentage} from './Statistics.styled'
 
+  
 export function Statistics({ title, stats }) {
     return (
       <StatisticSection>

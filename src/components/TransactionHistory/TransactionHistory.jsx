@@ -8,7 +8,7 @@ BodyT,
 BodyUl,
 BodyLi,
 
-} from './TransactionHistory.styled'
+} from './TransactionHistory.styled';
 
 export function TransactionHistory ({ items }){
     return (

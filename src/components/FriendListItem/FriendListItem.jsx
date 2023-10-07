@@ -15,6 +15,7 @@ export function FriendListItem({ id, isOnline, avatar, name }) {
     );
   }
 
+  
   FriendListItem.propTypes = {
     id: PropTypes.number.isRequired,
     isOnline: PropTypes.bool.isRequired,

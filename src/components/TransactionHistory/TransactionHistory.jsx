@@ -22,12 +22,12 @@ export function TransactionHistory ({ items }){
             </HeadT>
 
             <BodyT>
-                {items.map(items => {
+                {items.map(({id,type,amount,currency}) => {
                     return (
-                        <BodyUl key={items.id}>
-                            <BodyLi>{items.type}</BodyLi>
-                            <BodyLi>{items.amount}</BodyLi>
-                            <BodyLi>{items.currency}</BodyLi>
+                        <BodyUl key={id}>
+                            <BodyLi>{type}</BodyLi>
+                            <BodyLi>{amount}</BodyLi>
+                            <BodyLi>{currency}</BodyLi>
                         </BodyUl>
                     )
                 })}

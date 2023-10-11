@@ -13,7 +13,7 @@ import {
 } from './Profile.styled';
 
 
-export function Profile({ username, tag, location, avatar, stats }) {
+export function Profile({ username, tag, location, avatar, stats:{followers,views,likes} }) {
   return (
     <ProfileCard>
       <DescriptionCard>
@@ -26,15 +26,15 @@ export function Profile({ username, tag, location, avatar, stats }) {
       <UserStats>
         <UserStatsItem>
           <UserStatsLabel>Followers</UserStatsLabel>
-          <UserStatsQuantity>{stats.followers}</UserStatsQuantity>
+          <UserStatsQuantity>{followers}</UserStatsQuantity>
         </UserStatsItem>
         <UserStatsItem>
           <UserStatsLabel>Views</UserStatsLabel>
-          <UserStatsQuantity>{stats.views}</UserStatsQuantity>
+          <UserStatsQuantity>{views}</UserStatsQuantity>
         </UserStatsItem>
         <UserStatsItem>
           <UserStatsLabel>Likes</UserStatsLabel>
-          <UserStatsQuantity>{stats.likes}</UserStatsQuantity>
+          <UserStatsQuantity>{likes}</UserStatsQuantity>
         </UserStatsItem>
       </UserStats>
     </ProfileCard>

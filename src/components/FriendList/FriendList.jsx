@@ -1,37 +1,23 @@
 import PropTypes from 'prop-types';
-import {ListOfFriend,
-  ListOfFriendItem,
-  IsOnlineStatus,
-  UserAvatar,
-  Username,} from './FriendList.styled';
+import { ListOfFriends } from './FriendList.styled';
+import { FriendListItem } from './FriendListItem';
 
-export const FriendList = ({friends}) => {
-
+export function FriendList({ friends = [] }) {
   return (
-
-  <ListOfFriend>
-
-  {friends.map(({id,avatar,name,isOnline}) => (
-
-  <ListOfFriendItem key={id}>
-    <IsOnlineStatus status={isOnline}/>
-    <UserAvatar src={avatar} alt={name}/>
-    <Username>{name}</Username>
-</ListOfFriendItem>
-    ))}
-
-    </ListOfFriend>
-  )
+    <ListOfFriends>
+      {friends.map(({ avatar, name, isOnline, id }) => (
+        <FriendListItem key={id} isOnline={isOnline} avatar={avatar} name={name}/>
+      ))}
+    </ListOfFriends>
+  );
 }
-
 FriendList.propTypes = {
-    
-  friends: PropTypes.arrayOf (
-
-      PropTypes.shape({
-      id:PropTypes.number.isRequired,
-      avatar:PropTypes.string.isRequired,
-      name:PropTypes.string.isRequired,
-      isOnline:PropTypes.bool.isRequired
-  }))
-}
+  friends: PropTypes.arrayOf(
+    PropTypes.exact({
+      avatar: PropTypes.string.isRequired,
+      name: PropTypes.string.isRequired,
+      isOnline: PropTypes.bool.isRequired,
+      id: PropTypes.number.isRequired,
+    }).isRequired
+  ).isRequired,
+};

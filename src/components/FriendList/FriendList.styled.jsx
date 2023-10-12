@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
 
 
-export const ListOfFriend = styled.ul`
+export const ListOfFriends = styled.ul`
 
 width: 450px;
 
@@ -13,7 +13,7 @@ margin-block-end: 0em;
 padding-inline-start: 0px;
 `;
 
-export const ListOfFriendItem = styled.li`
+export const FriendListItem = styled.li`
   display: flex;
   align-items: center;
 
@@ -26,26 +26,3 @@ export const ListOfFriendItem = styled.li`
   background-color: white;
 `;
 
-
-export const IsOnlineStatus = styled.span`
-  width: 12px;
-  height: 12px;
-  border-radius: 6px;
-  background-color: ${props => {
-    if (props.isOnline) {
-      return 'green';
-    }
-    return 'red';
-  }};
-
-  margin-right: 10px;
-`;
-
-export const UserAvatar = styled.img`
-width:48px;
-`;
-
-export const Username = styled.p`
-  font-size: 20px;
-  font-weight: 600;
-`;
